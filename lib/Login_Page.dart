@@ -8,122 +8,165 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: SingleChildScrollView(
         child: SafeArea(
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 10),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
                 child: Container(
-                  height: 200,
+                  height: 120,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage('images/login.jpg'),
+                        image: AssetImage(
+                          'images/login.jpg',
+                        ),
                         fit: BoxFit.cover),
                     borderRadius: BorderRadius.only(
-                      bottomRight: Radius.circular(30),
-                      bottomLeft: Radius.circular(30),
-                    ),
+                        bottomLeft: Radius.circular(30),
+                        topRight: Radius.circular(30)),
                   ),
-                ),
-              ),
-              Container(
-                margin:
-                    const EdgeInsets.symmetric(horizontal: 45, vertical: 10),
-                child: TextFormField(
-                  keyboardType: TextInputType.emailAddress,
-                  onTap: () {},
-                  decoration: InputDecoration(
-                    prefixIcon: const Icon(Icons.person),
-                    labelText: 'Enter UserName',
-                    contentPadding: const EdgeInsets.fromLTRB(20, 10, 20, 15),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-                margin:
-                    const EdgeInsets.symmetric(horizontal: 45, vertical: 10),
-                height: 50,
-                child: TextFormField(
-                  keyboardType: TextInputType.visiblePassword,
-                  onTap: () {},
-                  decoration: InputDecoration(
-                    prefixIcon: const Icon(Icons.key),
-                    labelText: 'Enter Password',
-                    contentPadding: const EdgeInsets.fromLTRB(20, 10, 20, 15),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-                margin:
-                    const EdgeInsets.symmetric(horizontal: 45, vertical: 10),
-                height: 50,
-                child: TextFormField(
-                  keyboardType: TextInputType.visiblePassword,
-                  onTap: () {},
-                  decoration: InputDecoration(
-                    prefixIcon: const Icon(Icons.key),
-                    labelText: 'Confirm Password',
-                    contentPadding: const EdgeInsets.fromLTRB(20, 10, 20, 15),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 20),
-              InkWell(
-                child: ElevatedButton(
-                  onPressed: () {},
-                  child: const Text('Sign In'),
-                ),
-              ),
-              InkWell(
-                child: ElevatedButton(
-                  onPressed: () {},
-                  child: const Text('Create new account'),
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(40),
-                child: ClipRRect(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                child: Container(
+                  height: 450,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.white),
+                  child: Column(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.only(),
-                        child: SizedBox(
-                          child: Image.asset(
-                            'images/play.jpg',
-                            height: 30,
-                            fit: BoxFit.cover,
+                      const Padding(
+                        padding:
+                            EdgeInsets.symmetric(horizontal: 10, vertical: 30),
+                        child: Text(
+                          'Sign Up',
+                          style: TextStyle(
+                              fontSize: 25,
+                              color: Colors.grey,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      Container(
+                        height: 40,
+                        margin: const EdgeInsets.symmetric(
+                            horizontal: 25, vertical: 10),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        child: TextFormField(
+                          keyboardType: TextInputType.emailAddress,
+                          onTap: () {},
+                          decoration: InputDecoration(
+                            prefixIcon: const Icon(Icons.key),
+                            labelText: 'Email Address',
+                            contentPadding:
+                                const EdgeInsets.fromLTRB(20, 10, 20, 15),
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(20),
+                            ),
                           ),
                         ),
                       ),
-                      SizedBox(
-                        child: Image.asset(
-                          'images/android.jpg',
-                          height: 30,
-                          fit: BoxFit.cover,
+                      Container(
+                        margin: const EdgeInsets.symmetric(
+                            horizontal: 25, vertical: 10),
+                        height: 40,
+                        child: TextFormField(
+                          keyboardType: TextInputType.visiblePassword,
+                          onTap: () {},
+                          decoration: InputDecoration(
+                            prefixIcon: const Icon(Icons.person),
+                            labelText: 'Enter Password',
+                            contentPadding:
+                                const EdgeInsets.fromLTRB(20, 10, 20, 15),
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                          ),
                         ),
                       ),
-                      SizedBox(
-                        child: Image.asset(
-                          'images/apple.jpg',
-                          height: 30,
-                          fit: BoxFit.cover,
+                      Container(
+                        margin: const EdgeInsets.symmetric(
+                            horizontal: 25, vertical: 10),
+                        height: 40,
+                        child: TextFormField(
+                          keyboardType: TextInputType.visiblePassword,
+                          onTap: () {},
+                          decoration: InputDecoration(
+                            prefixIcon: const Icon(Icons.person),
+                            labelText: 'Confirm Password',
+                            contentPadding:
+                                const EdgeInsets.fromLTRB(20, 10, 20, 15),
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                          ),
                         ),
                       ),
+                      InkWell(
+                        onTap: () {
+                          Navigator.pushNamed(context, 'HomePage');
+                        },
+                        child: Container(
+                          height: 40,
+                          margin: const EdgeInsets.symmetric(
+                              horizontal: 65, vertical: 10),
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              color: Colors.blue),
+                          child: const Center(
+                            child: Text(
+                              'Sign Up',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                        ),
+                      ),
+                      const Text('Choose your operating system'),
+                      const SizedBox(height: 10),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          CircleAvatar(
+                            backgroundImage: AssetImage('images/play.jpg'),
+                          ),
+                          CircleAvatar(
+                            backgroundImage: AssetImage('images/android.jpg'),
+                          ),
+                          CircleAvatar(
+                            backgroundImage: AssetImage('images/apple.jpg'),
+                          )
+                        ],
+                      )
                     ],
                   ),
                 ),
               ),
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 50, vertical: 30),
+                child: Row(
+                  children: const [
+                    Text(
+                      "Don't have an account?",
+                      style: TextStyle(fontSize: 15, color: Colors.white),
+                    ),
+                    SizedBox(width: 10),
+                    Text(
+                      'Register Now',
+                      style: TextStyle(fontSize: 15, color: Colors.white),
+                    )
+                  ],
+                ),
+              )
             ],
           ),
         ),

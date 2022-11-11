@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medical_app/Home_Page.dart';
 
 import 'package:medical_app/Login_Page.dart';
 
@@ -15,9 +16,12 @@ class MyApp extends StatelessWidget {
       title: 'Medical App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        cardColor: const Color(0xFF1657FF),
       ),
-      home: const LoginPage(),
+      routes: {
+        '/': (context) => const LoginPage(),
+        'HomePage': (context) => const HomePage(),
+      },
     );
   }
 }
