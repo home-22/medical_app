@@ -17,7 +17,7 @@ class LoginPage extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
                 child: Container(
-                  height: 120,
+                  height: 110,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
                         image: AssetImage(
@@ -32,9 +32,9 @@ class LoginPage extends StatelessWidget {
               ),
               Padding(
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
                 child: Container(
-                  height: 450,
+                  height: 400,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       color: Colors.white),
@@ -152,7 +152,7 @@ class LoginPage extends StatelessWidget {
               ),
               Padding(
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 50, vertical: 30),
+                    const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
                 child: Row(
                   children: const [
                     Text(
