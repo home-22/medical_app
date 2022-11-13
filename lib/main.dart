@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:medical_app/Home_Page.dart';
-
+import 'package:medical_app/Doctor_Edit_Page/Doctor_Edit_Page.dart';
+import 'package:medical_app/DrDoctor_Page/DrDoctor_Page.dart';
+import 'package:medical_app/Home_Page/Home_Page.dart';
 import 'package:medical_app/Login_Page.dart';
 
 void main() {
@@ -21,6 +22,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const LoginPage(),
         'HomePage': (context) => const HomePage(),
+        'DoctorEditPage': (context) => const DoctorEditPage(),
+        'DrDoctorPage': (context) => const DrDoctorPage(),
       },
     );
   }

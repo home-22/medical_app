@@ -2,8 +2,8 @@
 
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:medical_app/widgets/Home_AppBar.dart';
-import 'package:medical_app/widgets/Home_Grid_Items.dart';
+import 'package:medical_app/Home_Page/widgets/Home_AppBar.dart';
+import 'package:medical_app/Home_Page/widgets/Home_Grid_Items.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
                       padding: EdgeInsets.only(right: 15, bottom: 60),
                       child: InkWell(
                         child: Icon(
-                          Icons.table_rows_rounded,
+                          Icons.more_vert,
                           color: Colors.white,
                         ),
                       ),
@@ -53,12 +53,11 @@ class HomePage extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: ConvexAppBar(
-        items: [
+        items: const [
           TabItem(icon: Icons.home, title: 'Home'),
           TabItem(icon: Icons.people, title: 'People'),
-          TabItem(icon: Icons.note_alt),
+          TabItem(icon: Icons.note_alt, title: 'Notes'),
         ],
-        onTap: (index) => print('click index '),
       ),
     );
   }
