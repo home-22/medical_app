@@ -8,7 +8,7 @@ class HomeGridItems extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.count(
-      childAspectRatio: 0.99,
+      childAspectRatio: 0.78,
       physics: const NeverScrollableScrollPhysics(),
       crossAxisCount: 2,
       shrinkWrap: true,
@@ -51,7 +51,7 @@ class HomeGridItems extends StatelessWidget {
                       color: Colors.white,
                       fontSize: 14,
                       fontWeight: FontWeight.bold),
-                )
+                ),
               ],
             ),
           ),
@@ -89,7 +89,7 @@ class HomeGridItems extends StatelessWidget {
                     color: Colors.grey,
                     fontSize: 14,
                     fontWeight: FontWeight.bold),
-              )
+              ),
             ],
           ),
         ),
@@ -126,7 +126,7 @@ class HomeGridItems extends StatelessWidget {
                     color: Colors.grey,
                     fontSize: 14,
                     fontWeight: FontWeight.bold),
-              )
+              ),
             ],
           ),
         ),
@@ -163,7 +163,7 @@ class HomeGridItems extends StatelessWidget {
                     color: Colors.grey,
                     fontSize: 14,
                     fontWeight: FontWeight.bold),
-              )
+              ),
             ],
           ),
         ),

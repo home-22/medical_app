@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medical_app/Calendar_Page/Calendar_Page.dart';
 import 'package:medical_app/Doctor_Edit_Page/Doctor_Edit_Page.dart';
 import 'package:medical_app/DrDoctor_Page/DrDoctor_Page.dart';
 import 'package:medical_app/Home_Page/Home_Page.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
         'HomePage': (context) => const HomePage(),
         'DoctorEditPage': (context) => const DoctorEditPage(),
         'DrDoctorPage': (context) => const DrDoctorPage(),
+        'CalendarPage':(context) => const CalendarPage(),
       },
     );
   }

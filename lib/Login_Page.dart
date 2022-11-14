@@ -143,7 +143,7 @@ class LoginPage extends StatelessWidget {
                           ),
                           CircleAvatar(
                             backgroundImage: AssetImage('images/apple.jpg'),
-                          )
+                          ),
                         ],
                       )
                     ],

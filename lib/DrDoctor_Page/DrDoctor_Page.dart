@@ -24,8 +24,9 @@ class DrDoctorPage extends StatelessWidget {
                         width: 35,
                         height: 35,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: Colors.grey[50]),
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.grey[50],
+                        ),
                         child: InkWell(
                           onTap: () {
                             Navigator.pop(context);
@@ -52,7 +53,7 @@ class DrDoctorPage extends StatelessWidget {
                       height: 35,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
-                          color: Colors.blue),
+                          color: Colors.lightBlue),
                       child: const Icon(
                         Icons.domain_verification,
                         color: Colors.white,
@@ -76,7 +77,50 @@ class DrDoctorPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 15),
-              const ListVaccine()
+              const ListVaccine(),
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                child: Row(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(context, 'CalendarPage');
+                      },
+                      child: Container(
+                        height: 50,
+                        width: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(50),
+                          boxShadow: const [
+                            BoxShadow(
+                                blurRadius: 2,
+                                spreadRadius: 1,
+                                color: Colors.lightBlue),
+                          ],
+                          color: Colors.white,
+                        ),
+                        child: const Icon(
+                          Icons.add,
+                          color: Colors.lightBlue,
+                        ),
+                      ),
+                    ),
+                    const Padding(
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+                      child: Text(
+                        'Add appointment',
+                        style: TextStyle(
+                          color: Colors.lightBlue,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),

@@ -1,7 +1,7 @@
 // ignore_for_file: file_names
 
-import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:medical_app/Home_Page/widgets/Hbottom_NavBar.dart';
 import 'package:medical_app/Home_Page/widgets/Home_AppBar.dart';
 import 'package:medical_app/Home_Page/widgets/Home_Grid_Items.dart';
 
@@ -52,13 +52,7 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
-      bottomNavigationBar: ConvexAppBar(
-        items: const [
-          TabItem(icon: Icons.home, title: 'Home'),
-          TabItem(icon: Icons.people, title: 'People'),
-          TabItem(icon: Icons.note_alt, title: 'Notes'),
-        ],
-      ),
+      bottomNavigationBar: const HbottomNavBar(),
     );
   }
 }

@@ -12,7 +12,7 @@ class VaccineDT extends StatelessWidget {
       width: double.infinity,
       margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(15), color: Colors.blue),
+          borderRadius: BorderRadius.circular(15), color: Colors.lightBlue),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
         child: Column(

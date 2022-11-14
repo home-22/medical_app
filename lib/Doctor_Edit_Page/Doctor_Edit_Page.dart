@@ -50,21 +50,24 @@ class DoctorEditPage extends StatelessWidget {
                 width: double.infinity,
                 decoration: const BoxDecoration(
                     borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(35),
-                        topRight: Radius.circular(35)),
+                      topLeft: Radius.circular(35),
+                      topRight: Radius.circular(35),
+                    ),
                     color: Colors.white),
                 child: Column(
                   children: [
                     Padding(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 15, vertical: 15),
+                        horizontal: 15,
+                        vertical: 15,
+                      ),
                       child: Row(
                         children: [
                           const Text(
                             'Edit',
                             style: TextStyle(
                                 fontSize: 14,
-                                color: Colors.blue,
+                                color: Colors.lightBlue,
                                 fontWeight: FontWeight.bold),
                           ),
                           const Spacer(),
@@ -124,7 +127,7 @@ class DoctorEditPage extends StatelessWidget {
                                             style: TextStyle(
                                                 color: Colors.grey,
                                                 fontSize: 14),
-                                          )
+                                          ),
                                         ],
                                       ),
                                     ),
@@ -138,7 +141,7 @@ class DoctorEditPage extends StatelessWidget {
                                   children: const [
                                     Icon(
                                       Icons.calendar_today,
-                                      color: Colors.blue,
+                                      color: Colors.lightBlue,
                                       size: 14,
                                     ),
                                     SizedBox(width: 10),
@@ -150,7 +153,7 @@ class DoctorEditPage extends StatelessWidget {
                                       size: 14,
                                     ),
                                     SizedBox(width: 10),
-                                    Text('9:30')
+                                    Text('9:30'),
                                   ],
                                 ),
                               ),
@@ -168,7 +171,9 @@ class DoctorEditPage extends StatelessWidget {
                                     ),
                                     Padding(
                                       padding: const EdgeInsets.only(
-                                          bottom: 10, top: 10),
+                                        bottom: 10,
+                                        top: 10,
+                                      ),
                                       child: Row(
                                         children: [
                                           CircleAvatar(
@@ -191,8 +196,9 @@ class DoctorEditPage extends StatelessWidget {
                                                 Text(
                                                   'Frist time in clinic',
                                                   style: TextStyle(
-                                                      color: Colors.grey),
-                                                )
+                                                    color: Colors.grey,
+                                                  ),
+                                                ),
                                               ],
                                             ),
                                           ),
@@ -207,7 +213,7 @@ class DoctorEditPage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const BottonPatient()
+                    const BottonPatient(),
                   ],
                 ),
               ),

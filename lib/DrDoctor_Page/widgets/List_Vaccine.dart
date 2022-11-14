@@ -17,7 +17,7 @@ class ListVaccine extends StatelessWidget {
         VaccineTDAP(),
         VaccineDT(),
         VaccinePSV23(),
-        VaccineRV1()
+        VaccineRV1(),
       ],
     );
   }
