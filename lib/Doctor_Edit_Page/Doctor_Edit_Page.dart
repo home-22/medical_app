@@ -10,15 +10,14 @@ class DoctorEditPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: const Color(0xAB7E8EFA),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Container(
+              SizedBox(
                 height: 120,
                 width: double.infinity,
-                color: Colors.grey,
                 child: Row(
                   children: const [
                     Padding(

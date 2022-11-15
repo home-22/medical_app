@@ -3,6 +3,8 @@
 import 'package:date_picker_timeline/date_picker_timeline.dart';
 import 'package:flutter/material.dart';
 import 'package:medical_app/Calendar_Page/widgets/Calendar_Card.dart';
+import 'package:medical_app/Calendar_Page/widgets/Calendar_Card2.dart';
+import 'package:medical_app/Calendar_Page/widgets/Calendar_Card3.dart';
 import 'package:medical_app/Home_Page/widgets/Hbottom_NavBar.dart';
 
 class CalendarPage extends StatelessWidget {
@@ -56,16 +58,20 @@ class CalendarPage extends StatelessWidget {
               ),
               Padding(
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                    const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
                 child: Column(
                   children: [
-                    DatePicker(
-                      DateTime.now(),
-                      selectionColor: Colors.white38,
-                      selectedTextColor: Colors.white,
+                    Padding(
+                      padding: const EdgeInsets.only(left: 5, right: 5),
+                      child: DatePicker(
+                        DateTime.now(),
+                        selectionColor: Colors.white38,
+                        selectedTextColor: Colors.white,
+                      ),
                     ),
                     const CalendarCard(),
-                    const CalendarCard(),
+                    const CalendarCard2(),
+                    const CalendarCard3(),
                   ],
                 ),
               ),

@@ -81,7 +81,7 @@ class VaccinePSV23 extends StatelessWidget {
                     style: TextStyle(color: Colors.white54),
                   ),
                   Text(
-                    'Septembar 22',
+                    'Septembar 26',
                     style: TextStyle(color: Colors.white54),
                   ),
                 ],

@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-class CalendarCard extends StatelessWidget {
-  const CalendarCard({Key? key}) : super(key: key);
+class CalendarCard2 extends StatelessWidget {
+  const CalendarCard2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class CalendarCard extends StatelessWidget {
               Row(
                 children: [
                   const Text(
-                    '9:30',
+                    '11:40',
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 35,
@@ -35,7 +35,7 @@ class CalendarCard extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
                         Text(
-                          'Stefania Keller',
+                          'Natelie Primer',
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 19,
@@ -43,7 +43,7 @@ class CalendarCard extends StatelessWidget {
                         ),
                         SizedBox(height: 5),
                         Text(
-                          'Dr.Hanna Fiegel',
+                          'Dr.Fiegel',
                           style: TextStyle(
                               fontSize: 13,
                               color: Colors.black38,
@@ -56,7 +56,7 @@ class CalendarCard extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               const Text(
-                'DT(-generic-)st.112',
+                'Tdap(Adacel)pt.4st89',
                 style: TextStyle(
                     fontSize: 13,
                     color: Colors.black38,

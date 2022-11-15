@@ -15,7 +15,7 @@ class HbottomNavBar extends StatelessWidget {
           BoxShadow(
             blurRadius: 1,
             spreadRadius: 5,
-            color: Colors.grey,
+            color: Colors.white38,
           ),
         ],
         color: Colors.lightBlue,
